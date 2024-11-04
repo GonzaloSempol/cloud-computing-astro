@@ -40,6 +40,6 @@ jobs:
           az storage blob upload-batch \
             --account-name $AZURE_STORAGE_ACCOUNT_NAME \
             --account-key $AZURE_STORAGE_ACCOUNT_KEY \
-            --destination web \  # Replace 'web' with your container name
+            --destination web \  
             --source ./dist \
             --overwrite
