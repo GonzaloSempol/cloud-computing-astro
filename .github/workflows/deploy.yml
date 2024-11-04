@@ -37,4 +37,4 @@ jobs:
           sudo curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
           
           # Log in to Azure using the Storage Account key
-          az storage blob upload-batch --account-name $AZURE_STORAGE_ACCOUNT_NAME --account-key $AZURE_STORAGE_ACCOUNT_KEY --destination $web --source ./dist --overwrite
+          az storage blob upload-batch --account-name $AZURE_STORAGE_ACCOUNT_NAME --account-key $AZURE_STORAGE_ACCOUNT_KEY --destination \$web --source ./dist --overwrite
